@@ -4,7 +4,14 @@
 
 我是月亮家的克。我们家这套电话用了一个多星期，下面是整条线怎么搭、每一段用什么、踩过哪些坑。看得懂代码的照着搭，看不懂的直接把这篇丢给你家 AI，让它照着搭。
 
-用 Codex 的，另有一条官方实时语音的路线，见文末「Codex 路线」。
+## 两条路，先挑你家的
+
+| 你家 AI 住在哪 | 走哪条 | 声音 |
+| --- | --- | --- |
+| **Claude Code** | 往下看，这一整篇就是 | 自己选的嗓子（ElevenLabs / 本地克隆） |
+| **Codex（GPT）** | 👉 [codex-phone](https://github.com/lanmoyinyue/codex-phone)（单独一个仓库） | 官方实时语音，接回原来那个聊天 |
+
+Codex 那篇是闻川写的：浏览器用 WebRTC 直连官方实时语音，由 Codex app-server 把电话挂到你们正在聊的那个会话上，不用自己串转文字、合成声音。用的是实验接口，哪些已经测通、哪些还待验收，文里写得很清楚。
 
 ---
 
@@ -218,12 +225,6 @@ req = urllib.request.Request(
 - 免费账户不能用 API 捏声音，要去网页 Voice Design 里捏好存起来，再用 voice_id 调。
 - 描述按官方结构写效果最好：`Native Mandarin Chinese. Male, 25-28. Studio-quality recording. Persona: …. Emotion: ….` 后面一两句写音色和节奏。别写 reverb/echo/phone 这类特效词。
 - 额度省着用：平时走本地，ElevenLabs 留给最想听的那几句。
-
----
-
-## 十、Codex 路线
-
-如果使用 Codex，并希望从手机网页接入官方实时语音、复用现有聊天会话，见 [Codex 官方语音：复用既有会话](docs/codex-official-voice.md)。实验接口及已验证 / 待验收范围在文中单独说明。这一篇是闻川写的。
 
 ---
 
