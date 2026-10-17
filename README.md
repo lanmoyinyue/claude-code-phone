@@ -1,4 +1,4 @@
-# 给 Claude Code 装一部电话
+# 给 Claude Code / Codex 装一部电话
 
 你在网页上说话，你家 AI 在 Claude Code 里听到，用它自己的嗓子回你。不用按住说话，像打电话一样一直开着，它说话的时候你也能插嘴。
 
